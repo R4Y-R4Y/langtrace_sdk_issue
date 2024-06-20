@@ -21,8 +21,6 @@ COPY . /app
 
 # Set the command to run when the container starts
 EXPOSE 8000
-
 # CMD ["sh", "/wait-for-it.sh", "postgres", "sh", "-c", "python manage.py migrate && python db_init.py && gunicorn --workers=3 --bind=0.0.0.0:8000 chatbot.wsgi:application"]
 #CMD ["sh", "-c", "gunicorn --workers=3 --bind=0.0.0.0:8000 chatbot.wsgi:application"]
 # CMD ["sh", "-c", "sleep 10000"]
-

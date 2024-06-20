@@ -1,3 +1,7 @@
 Django
 channels[daphne]
 langtrace-python-sdk
+langgraph
+openai
+langchain
+langchain-community
